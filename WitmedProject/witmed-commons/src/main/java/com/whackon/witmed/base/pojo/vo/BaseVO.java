@@ -1,5 +1,8 @@
 package com.whackon.witmed.base.pojo.vo;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -20,12 +23,18 @@ import java.util.Date;
  * @version 1.0.0
  * @since 1.0.0
  */
+@ApiModel("基础信息功能 - 基础视图信息")
 public class BaseVO implements Serializable {
 	private static final long serialVersionUID = 5307507834353921384L;
+	@ApiModelProperty(value = "系统状态：0-禁用，1-启用")
 	private String status;                      // 系统状态：0-禁用，1-启用
+	@ApiModelProperty(value = "创建人")
 	private String createdBy;                   // 创建人
+	@ApiModelProperty(value = "创建时间")
 	private Date createdTime;                   // 创建时间
+	@ApiModelProperty(value = "修改人")
 	private String modifiedBy;                  // 修改人
+	@ApiModelProperty(value = "修改时间")
 	private Date modifiedTime;                  // 修改时间
 
 	public String getStatus() {
