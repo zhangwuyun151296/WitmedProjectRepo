@@ -1,8 +1,6 @@
 package com.whackon.witmed.base.pojo.vo;
 
 import com.whackon.witmed.base.pojo.enums.ResponseCode;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 
 import java.io.Serializable;
 
@@ -21,14 +19,10 @@ import java.io.Serializable;
  * @version 1.0.0
  * @since 1.0.0
  */
-@ApiModel("基础信息功能 - 系统响应视图信息")
 public class ResponseVO implements Serializable {
 	private static final long serialVersionUID = -1243700449847575050L;
-	@ApiModelProperty(value = "系统响应编码")
 	private String code;                        // 系统响应编码
-	@ApiModelProperty(value = "系统响应信息")
 	private String message;                     // 系统响应信息
-	@ApiModelProperty(value = "系统响应数据")
 	private Object data;                        // 系统响应数据
 
 	public ResponseVO(ResponseCode responseCode, String message, Object data) {

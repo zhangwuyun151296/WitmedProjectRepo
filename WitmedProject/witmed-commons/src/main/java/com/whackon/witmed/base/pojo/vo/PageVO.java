@@ -1,8 +1,5 @@
 package com.whackon.witmed.base.pojo.vo;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 import java.io.Serializable;
 import java.util.List;
 
@@ -23,18 +20,12 @@ import java.util.List;
  * @version 1.0.0
  * @since 1.0.0
  */
-@ApiModel("基础信息功能 - 系统分页视图信息")
 public class PageVO<E extends BaseVO> implements Serializable {
 	private static final long serialVersionUID = -3458922961994208370L;
-	@ApiModelProperty(value = "当前页码")
 	private Integer pageNum;                        // 当前页码
-	@ApiModelProperty(value = "每页显示数量")
 	private Integer pageSize;                       // 每页显示数量
-	@ApiModelProperty(value = "分页列表")
 	private List<E> list;                           // 分页列表
-	@ApiModelProperty(value = "总条数")
 	private Long totalCount;                        // 总条数
-	@ApiModelProperty(value = "总页数")
 	private Integer totalPage;                      // 总页数
 
 	public PageVO() {}

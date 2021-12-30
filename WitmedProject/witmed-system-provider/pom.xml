@@ -6,6 +6,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>witmed-system-provider</artifactId>
 	<!-- 设置项目打包方式为 jar -->
+	<packaging>jar</packaging>
 
 	<!-- 配置使用 Witmed Parent 作为项目父级依赖 [BEGIN] -->
 	<parent>
